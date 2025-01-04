@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import supabase from "../lib/supabase";
 import ProfileModal from "./ProfileModal";
+
 export default function HeaderBar() {
   const [user, setUser] = useState(null); // 保存当前用户信息
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+
   // 登录功能
   const handleLogin = async () => {
     if (loading) return;
@@ -61,17 +63,17 @@ export default function HeaderBar() {
 
   return (
     <header className="w-full bg-white shadow-md px-4 py-3 flex justify-between items-center">
-      {/* Logo 部分 */}
-      <div className="flex items-center ml-10">
+      {/* Logo 和标题部分 */}
+      <Link href="/" className="flex items-center ml-10 cursor-pointer">
         <img
           src="/images/icon.png"
           alt="Win Road Test Logo"
           className="h-10 w-auto"
         />
-        <h1 className="text-xl font-bold ml-2 text-gray-800">
+        <h1 className="text-xl font-bold ml-2 text-gray-800 hover:text-blue-500">
           Win YOUR Game Now!
         </h1>
-      </div>
+      </Link>
 
       {/* 登录或 Profile 和退出按钮 */}
       <div className="flex items-center space-x-2">

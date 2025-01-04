@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import LikeButton from '@/components/LikeButton'; // 确保路径正确
+import supabase from '@/lib/supabase';
+import LikeButton from '@/components/LikeButton';
 
 const avatars = [
   '/images/avatars/bear_profile.png',
@@ -18,93 +19,112 @@ export default function ReviewItem({
   date,
   numAttempt,
   examResult,
-  minimalMistake,
-  criticalMistake,
+  minimalMistake = [],
+  criticalMistake = [],
   examiner,
   tips,
+  isDeletable,
+  onDelete,
   avatar,
   initialLikes,
+  user,
 }) {
-  const [showDetails, setShowDetails] = useState(false);
+  const [detailsVisible, setDetailsVisible] = useState(false);
 
-  const toggleDetails = () => setShowDetails((prev) => !prev);
+  const toggleDetails = () => {
+    setDetailsVisible((prev) => !prev);
+  };
+
+  const handleDelete = () => {
+    if (confirm('Are you sure you want to delete this review?')) {
+      onDelete(id);
+    }
+  };
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-4">
+    <div className="bg-white shadow-md rounded-lg p-4 my-4">
       {/* Header Section */}
       <div className="flex items-center mb-4">
-        <img
-          src={avatars[avatar] || avatars[0]}
-          alt="User Avatar"
-          className="w-12 h-12 rounded-full object-cover mr-4"
-        />
-        <div>
+        <div className="w-16 h-16 rounded-full border-2 border-blue-400 overflow-hidden">
+          <img
+            src={avatars[avatar] || avatars[0]}
+            alt="Avatar"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="ml-4">
           <h3 className="text-lg font-bold">{username}</h3>
-          <p className="text-gray-500 text-sm">{locationName}</p>
-          <p className="text-gray-400 text-xs">{date}</p>
+          <p className="text-sm text-gray-500">{locationName}</p>
+          <p className="text-sm text-gray-400">{date}</p>
+          <p className="text-sm text-gray-500">
+            {numAttempt} Attempt{numAttempt > 1 ? 's' : ''} - {examResult}
+          </p>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div>
-        <p className="text-gray-700 text-sm">
-          <strong>Attempts:</strong> {numAttempt}
-        </p>
-        <p className="text-gray-700 text-sm">
-          <strong>Result:</strong> {examResult}
-        </p>
+      {/* Details Section */}
+      {detailsVisible && (
+        <div className="mt-4">
+          {/* Minimal Errors */}
+          {minimalMistake.length > 0 && (
+            <div>
+              <p className="text-sm font-bold">Minimal Errors:</p>
+              <ul className="list-disc ml-5 text-sm text-gray-600">
+                {minimalMistake.map((error, index) => (
+                  <li key={index}>{error}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-        {showDetails && (
-          <div className="mt-4">
-            {/* Minimal Mistakes */}
-            {minimalMistake?.length > 0 && (
-              <>
-                <p className="text-sm font-bold">General Errors:</p>
-                <ul className="list-disc list-inside text-gray-700 text-sm">
-                  {minimalMistake.map((mistake, index) => (
-                    <li key={index}>{mistake}</li>
-                  ))}
-                </ul>
-              </>
-            )}
+          {/* Critical Errors */}
+          {criticalMistake.length > 0 && (
+            <div className="mt-4">
+              <p className="text-sm font-bold">Critical Errors:</p>
+              <ul className="list-disc ml-5 text-sm text-gray-600">
+                {criticalMistake.map((error, index) => (
+                  <li key={index}>{error}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-            {/* Critical Mistakes */}
-            {criticalMistake?.length > 0 && (
-              <>
-                <p className="text-sm font-bold mt-2">Critical Errors:</p>
-                <ul className="list-disc list-inside text-gray-700 text-sm">
-                  {criticalMistake.map((mistake, index) => (
-                    <li key={index}>{mistake}</li>
-                  ))}
-                </ul>
-              </>
-            )}
+          {/* Examiner */}
+          {examiner && (
+            <div className="mt-4">
+              <p className="text-sm font-bold">Examiner:</p>
+              <p className="text-sm text-gray-600">{examiner}</p>
+            </div>
+          )}
 
-            {/* Examiner Details */}
-            <p className="text-sm font-bold mt-2">Examiner:</p>
-            <p className="text-gray-700 text-sm">{examiner}</p>
+          {/* Tips */}
+          {tips && (
+            <div className="mt-4">
+              <p className="text-sm font-bold">Tips:</p>
+              <p className="text-sm text-gray-600">{tips}</p>
+            </div>
+          )}
+        </div>
+      )}
 
-            {/* Tips */}
-            {tips && (
-              <>
-                <p className="text-sm font-bold mt-2">Tips:</p>
-                <p className="text-gray-700 text-sm">{tips}</p>
-              </>
-            )}
-          </div>
-        )}
-
-        <button
-          className="text-blue-500 text-sm mt-2"
-          onClick={toggleDetails}
-        >
-          {showDetails ? 'Hide Details' : 'View Details'}
-        </button>
-      </div>
+      <button
+        onClick={toggleDetails}
+        className="text-sm text-blue-500 mt-2 hover:underline"
+      >
+        {detailsVisible ? 'Hide Details' : 'Show Details'}
+      </button>
 
       {/* Footer Section */}
       <div className="mt-4 border-t pt-4 flex justify-between items-center">
-        <LikeButton initialLikes={initialLikes} postId={id} />
+        <LikeButton initialLikes={initialLikes} user={user} postId={id} />
+        {isDeletable && (
+          <button
+            onClick={handleDelete}
+            className="text-sm text-red-500 hover:underline"
+          >
+            Delete
+          </button>
+        )}
       </div>
     </div>
   );
