@@ -9,6 +9,7 @@ export default function HeaderBar() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false); // 控制登录弹窗的显示
 
   // 登录功能
   const handleLogin = async () => {
@@ -28,6 +29,7 @@ export default function HeaderBar() {
         alert("Login failed: " + error.message);
       } else {
         setUser(user); // 设置当前用户信息
+        setIsLoginOpen(false); // 关闭登录弹窗
       }
     } catch (error) {
       alert("An unexpected error occurred: " + error.message);
@@ -94,28 +96,11 @@ export default function HeaderBar() {
           </>
         ) : (
           <>
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="border rounded-lg px-2 py-1 w-48 text-gray-800 placeholder-gray-500 text-lg"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="border rounded-lg px-2 py-1 w-48 text-gray-800 placeholder-gray-500 text-lg"
-            />
             <button
-              onClick={handleLogin}
-              className={`px-4 py-2 rounded-lg text-white ${
-                loading ? "bg-gray-700" : "bg-green-500 hover:bg-green-600"
-              }`}
-              disabled={loading}
+              onClick={() => setIsLoginOpen(true)} // 打开登录弹窗
+              className="px-4 py-2 rounded-lg text-white bg-green-500 hover:bg-green-600"
             >
-              {loading ? "Logging in..." : "Login"}
+              Login
             </button>
           </>
         )}
@@ -126,6 +111,48 @@ export default function HeaderBar() {
         <ProfileModal
           onClose={() => setIsProfileOpen(false)} // 关闭弹窗
         />
+      )}
+
+      {/* 登录弹窗 */}
+      {isLoginOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-md w-80 relative">
+            <button
+              onClick={() => setIsLoginOpen(false)}
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+            >
+              ✕
+            </button>
+            <h2 className="text-xl font-bold mb-4">Login</h2>
+            <div className="mb-4">
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full border rounded-lg px-3 py-2 text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full border rounded-lg px-3 py-2 text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <button
+              onClick={handleLogin}
+              className={`w-full py-2 rounded-lg text-white ${
+                loading ? "bg-gray-700" : "bg-green-500 hover:bg-green-600"
+              }`}
+              disabled={loading}
+            >
+              {loading ? "Logging in..." : "Login"}
+            </button>
+          </div>
+        </div>
       )}
     </header>
   );
