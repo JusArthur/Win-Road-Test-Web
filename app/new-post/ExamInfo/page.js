@@ -2,22 +2,24 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import supabase from '@/lib/supabase'; // 确保路径正确
+import supabase from '@/lib/supabase';
 
 export default function ExamInfo() {
   const router = useRouter();
 
-  // State 管理
-  const [selectedLocation, setSelectedLocation] = useState(null); // 改为 `null`
+  const [selectedLocation, setSelectedLocation] = useState(null); // Null for initial state
   const [locations, setLocations] = useState([]);
   const [date, setDate] = useState('');
-  const [examResult, setExamResult] = useState('');
+  const [examResult, setExamResult] = useState(null); // Change to null
   const [loadingLocations, setLoadingLocations] = useState(true);
   const [showLocationPicker, setShowLocationPicker] = useState(false);
 
-  const [error, setError] = useState({ location: '', date: '', examResult: '' });
+  const [error, setError] = useState({
+    location: '',
+    date: '',
+    examResult: '',
+  });
 
-  // 从 Supabase 获取 locations
   useEffect(() => {
     const fetchLocations = async () => {
       try {
@@ -37,20 +39,17 @@ export default function ExamInfo() {
     fetchLocations();
   }, []);
 
-  // 处理地点选择
   const handleLocationSelect = (locationId) => {
-    setSelectedLocation(Number(locationId)); // 转换为数字
+    setSelectedLocation(Number(locationId));
     setError((prev) => ({ ...prev, location: '' }));
     setShowLocationPicker(false);
   };
 
-  // 处理考试结果选择
-  const handleExamResult = (result) => {
-    setExamResult(result);
+  const handleExamResult = (resultId) => {
+    setExamResult(resultId); // Directly store the numeric ID
     setError((prev) => ({ ...prev, examResult: '' }));
   };
 
-  // 验证并跳转到下一步
   const validateAndProceed = () => {
     let isValid = true;
     const errors = { location: '', date: '', examResult: '' };
@@ -65,7 +64,7 @@ export default function ExamInfo() {
       isValid = false;
     }
 
-    if (!examResult) {
+    if (examResult === null) {
       errors.examResult = 'Please select an exam result.';
       isValid = false;
     }
@@ -73,14 +72,10 @@ export default function ExamInfo() {
     setError(errors);
 
     if (isValid) {
-      // 保存到 localStorage
-      const formData = {
-        selectedLocation,
-        date,
-        examResult,
-      };
+      localStorage.setItem('selectedLocation', selectedLocation);
+      localStorage.setItem('date', date);
+      localStorage.setItem('examResult', examResult); // Store numeric ID
 
-      localStorage.setItem('examInfo', JSON.stringify(formData));
       router.push('/new-post/MinimalMistakes');
     }
   };
@@ -89,7 +84,7 @@ export default function ExamInfo() {
     <div className="p-6">
       <h1 className="text-xl font-bold mb-4">Exam Info</h1>
 
-      {/* 地点选择器 */}
+      {/* Location Picker */}
       <div className="mb-4">
         <label className="block font-medium mb-2">Select Exam Location</label>
         <button
@@ -105,14 +100,14 @@ export default function ExamInfo() {
         {error.location && <p className="text-red-500 text-sm mt-1">{error.location}</p>}
       </div>
 
-      {/* 日期选择器 */}
+      {/* Date Picker */}
       <div className="mb-4">
         <label className="block font-medium mb-2">Exam Date</label>
         <input
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
-          max={new Date().toISOString().split('T')[0]} // 限制为今天或更早日期
+          max={new Date().toISOString().split('T')[0]} // Restrict to today or earlier
           className={`w-full p-2 border rounded ${
             error.date ? 'border-red-500' : 'border-gray-300'
           }`}
@@ -120,28 +115,31 @@ export default function ExamInfo() {
         {error.date && <p className="text-red-500 text-sm mt-1">{error.date}</p>}
       </div>
 
-      {/* 考试结果选择器 */}
+      {/* Exam Result Picker */}
       <div className="mb-4">
         <label className="block font-medium mb-2">Exam Result</label>
         <div className="flex space-x-4">
-          {['Pass', 'Fail'].map((result) => (
+          {[
+            { id: 1, name: 'Pass' },
+            { id: 2, name: 'Fail' },
+          ].map((result) => (
             <button
-              key={result}
-              onClick={() => handleExamResult(result)}
+              key={result.id}
+              onClick={() => handleExamResult(result.id)} // Pass numeric ID
               className={`p-2 rounded border ${
-                examResult === result
+                examResult === result.id
                   ? 'bg-green-500 text-white border-green-500'
                   : 'bg-gray-200 text-black border-gray-300'
               }`}
             >
-              {result}
+              {result.name}
             </button>
           ))}
         </div>
         {error.examResult && <p className="text-red-500 text-sm mt-1">{error.examResult}</p>}
       </div>
 
-      {/* 地点选择弹窗 */}
+      {/* Location Picker Modal */}
       {showLocationPicker && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end">
           <div className="bg-white w-full rounded-t-xl p-4">
@@ -171,7 +169,7 @@ export default function ExamInfo() {
         </div>
       )}
 
-      {/* 下一步按钮 */}
+      {/* Next Button */}
       <button
         onClick={validateAndProceed}
         className="bg-green-500 text-white w-full p-2 rounded mt-4"
