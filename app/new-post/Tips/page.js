@@ -2,18 +2,17 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import supabase from '@/lib/supabase'; // 确保路径正确
+import supabase from '@/lib/supabase';
+import HeaderBar from '@/components/HeaderBar';
 
 export default function Tips() {
   const router = useRouter();
 
-  // 状态管理
   const [tips, setTips] = useState('');
   const [loading, setLoading] = useState(false);
-  const [user, setUser] = useState(null); // 检测登录状态
+  const [user, setUser] = useState(null);
   const [errorMessage, setErrorMessage] = useState('');
 
-  // 从 localStorage 获取状态
   const [selectedLocation, setSelectedLocation] = useState('');
   const [date, setDate] = useState('');
   const [numAttempt, setNumAttempt] = useState('');
@@ -23,7 +22,6 @@ export default function Tips() {
   const [examinerReview, setExaminerReview] = useState({});
 
   useEffect(() => {
-    // 获取用户登录状态
     const checkUser = async () => {
       const {
         data: { user },
@@ -37,7 +35,6 @@ export default function Tips() {
       }
     };
 
-    // 从 localStorage 获取状态
     const loadLocalStorageData = () => {
       setSelectedLocation(localStorage.getItem('selectedLocation') || '');
       setDate(localStorage.getItem('date') || '');
@@ -58,7 +55,6 @@ export default function Tips() {
     loadLocalStorageData();
   }, []);
 
-  // 提交数据到 Supabase
   const submitHandler = async () => {
     try {
       setLoading(true);
@@ -80,7 +76,7 @@ export default function Tips() {
       const postData = {
         user_id: user.id,
         username: profile.display_name,
-        location_id: Number(selectedLocation), // 确保为数字
+        location_id: Number(selectedLocation),
         exam_date: date,
         num_attempt: Number(numAttempt),
         exam_result_id: Number(examResult),
@@ -99,10 +95,7 @@ export default function Tips() {
         throw new Error('Error inserting data');
       }
 
-      // 清除 localStorage
       localStorage.clear();
-
-      // 跳转到首页
       router.push('/');
     } catch (error) {
       console.error('Error:', error.message);
@@ -114,15 +107,17 @@ export default function Tips() {
 
   if (!user) {
     return (
-      <div className="p-6 bg-white rounded shadow">
-        <h1 className="text-xl font-bold mb-4">Tips</h1>
-        <p className="text-red-500">{errorMessage}</p>
-        <button
-          onClick={() => router.push('/login')}
-          className="bg-blue-500 text-white px-4 py-2 rounded mt-4"
-        >
-          Log in
-        </button>
+      <div className="p-6 flex justify-center">
+        <div className="w-full max-w-screen-md bg-white rounded shadow">
+          <h1 className="text-xl font-bold mb-4">Tips</h1>
+          <p className="text-red-500">{errorMessage}</p>
+          <button
+            onClick={() => router.push('/login')}
+            className="bg-blue-500 text-white px-4 py-2 rounded mt-4"
+          >
+            Log in
+          </button>
+        </div>
       </div>
     );
   }
@@ -137,24 +132,29 @@ export default function Tips() {
   }
 
   return (
-    <div className="p-6 bg-white rounded shadow">
-      <h1 className="text-xl font-bold mb-4">Tips</h1>
-      <textarea
-        value={tips}
-        onChange={(e) => setTips(e.target.value)}
-        placeholder="Enter your tips here"
-        className="w-full p-2 border rounded h-32"
-      />
-      {errorMessage && <p className="text-red-500 mt-2">{errorMessage}</p>}
-      <button
-        onClick={submitHandler}
-        disabled={loading || !tips.trim()}
-        className={`bg-green-500 text-white px-4 py-2 rounded mt-4 ${
-          !tips.trim() ? 'opacity-50 cursor-not-allowed' : ''
-        }`}
-      >
-        Submit
-      </button>
-    </div>
+    <>
+      <HeaderBar />
+      <div className="p-6 flex justify-center">
+        <div className="w-full max-w-screen-md bg-white rounded shadow">
+          <h1 className="text-xl font-bold mb-4">Tips</h1>
+          <textarea
+            value={tips}
+            onChange={(e) => setTips(e.target.value)}
+            placeholder="Enter your tips here"
+            className="w-full p-2 border rounded h-32"
+          />
+          {errorMessage && <p className="text-red-500 mt-2">{errorMessage}</p>}
+          <button
+            onClick={submitHandler}
+            disabled={loading || !tips.trim()}
+            className={`bg-green-500 text-white px-4 py-2 rounded mt-4 ${
+              !tips.trim() ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import HeaderBar from '@/components/HeaderBar';
 
 export default function ExaminerImpression() {
   const router = useRouter();
@@ -98,111 +99,116 @@ export default function ExaminerImpression() {
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-xl font-bold mb-4">Examiner Impression</h1>
+    <>
+      <HeaderBar />
+      <div className="p-6 flex justify-center">
+        <div className="w-full max-w-screen-md">
+          <h1 className="text-xl font-bold mb-4">Examiner Impression</h1>
 
-      {/* Ethnicity Selection */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Ethnic Background</label>
-        <select
-          value={impression.ethnicity}
-          onChange={(e) => handleEthnicityChange(Number(e.target.value))}
-          className={`w-full p-2 border rounded ${
-            errors.ethnicity ? 'border-red-500' : 'border-gray-300'
-          }`}
-        >
-          <option value="">Select Ethnic Background</option>
-          {ethnicities.map((ethnicity) => (
-            <option key={ethnicity.id} value={ethnicity.id}>
-              {ethnicity.value}
-            </option>
-          ))}
-        </select>
-        {errors.ethnicity && (
-          <p className="text-red-500 text-sm mt-1">{errors.ethnicity}</p>
-        )}
-      </div>
-
-      {/* Gender Selection */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Gender</label>
-        <div className="flex space-x-4">
-          <button
-            onClick={() => handleGenderChange(1)}
-            className={`p-2 rounded border ${
-              impression.gender === 1
-                ? 'bg-green-500 text-white border-green-500'
-                : 'bg-gray-200 text-black border-gray-300'
-            }`}
-          >
-            Male
-          </button>
-          <button
-            onClick={() => handleGenderChange(2)}
-            className={`p-2 rounded border ${
-              impression.gender === 2
-                ? 'bg-green-500 text-white border-green-500'
-                : 'bg-gray-200 text-black border-gray-300'
-            }`}
-          >
-            Female
-          </button>
-        </div>
-        {errors.gender && (
-          <p className="text-red-500 text-sm mt-1">{errors.gender}</p>
-        )}
-      </div>
-
-      {/* Speaking Speed Selection */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Speaking Speed</label>
-        <div className="flex space-x-4">
-          {['Fast', 'Normal', 'Slow'].map((speed, index) => (
-            <button
-              key={index}
-              onClick={() => handleSpeedChange(index + 1)}
-              className={`p-2 rounded border ${
-                impression.speed === index + 1
-                  ? 'bg-green-500 text-white border-green-500'
-                  : 'bg-gray-200 text-black border-gray-300'
+          {/* Ethnicity Selection */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Ethnic Background</label>
+            <select
+              value={impression.ethnicity}
+              onChange={(e) => handleEthnicityChange(Number(e.target.value))}
+              className={`w-full p-2 border rounded ${
+                errors.ethnicity ? 'border-red-500' : 'border-gray-300'
               }`}
             >
-              {speed}
-            </button>
-          ))}
-        </div>
-        {errors.speed && (
-          <p className="text-red-500 text-sm mt-1">{errors.speed}</p>
-        )}
-      </div>
+              <option value="">Select Ethnic Background</option>
+              {ethnicities.map((ethnicity) => (
+                <option key={ethnicity.id} value={ethnicity.id}>
+                  {ethnicity.value}
+                </option>
+              ))}
+            </select>
+            {errors.ethnicity && (
+              <p className="text-red-500 text-sm mt-1">{errors.ethnicity}</p>
+            )}
+          </div>
 
-      {/* Attitude Selection */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Attitude</label>
-        <div className="flex flex-wrap gap-2">
-          {attitudeOptions.map((attitude) => (
-            <button
-              key={attitude.id}
-              onClick={() => handleToggleAttitude(attitude.id)}
-              className={`p-2 rounded border ${
-                impression.attitudes.includes(attitude.id)
-                  ? 'bg-green-500 text-white border-green-500'
-                  : 'bg-gray-200 text-black border-gray-300'
-              }`}
-            >
-              {attitude.value}
-            </button>
-          ))}
+          {/* Gender Selection */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Gender</label>
+            <div className="flex space-x-4">
+              <button
+                onClick={() => handleGenderChange(1)}
+                className={`p-2 rounded border ${
+                  impression.gender === 1
+                    ? 'bg-green-500 text-white border-green-500'
+                    : 'bg-gray-200 text-black border-gray-300'
+                }`}
+              >
+                Male
+              </button>
+              <button
+                onClick={() => handleGenderChange(2)}
+                className={`p-2 rounded border ${
+                  impression.gender === 2
+                    ? 'bg-green-500 text-white border-green-500'
+                    : 'bg-gray-200 text-black border-gray-300'
+                }`}
+              >
+                Female
+              </button>
+            </div>
+            {errors.gender && (
+              <p className="text-red-500 text-sm mt-1">{errors.gender}</p>
+            )}
+          </div>
+
+          {/* Speaking Speed Selection */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Speaking Speed</label>
+            <div className="flex space-x-4">
+              {['Fast', 'Normal', 'Slow'].map((speed, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleSpeedChange(index + 1)}
+                  className={`p-2 rounded border ${
+                    impression.speed === index + 1
+                      ? 'bg-green-500 text-white border-green-500'
+                      : 'bg-gray-200 text-black border-gray-300'
+                  }`}
+                >
+                  {speed}
+                </button>
+              ))}
+            </div>
+            {errors.speed && (
+              <p className="text-red-500 text-sm mt-1">{errors.speed}</p>
+            )}
+          </div>
+
+          {/* Attitude Selection */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Attitude</label>
+            <div className="flex flex-wrap gap-2">
+              {attitudeOptions.map((attitude) => (
+                <button
+                  key={attitude.id}
+                  onClick={() => handleToggleAttitude(attitude.id)}
+                  className={`p-2 rounded border ${
+                    impression.attitudes.includes(attitude.id)
+                      ? 'bg-green-500 text-white border-green-500'
+                      : 'bg-gray-200 text-black border-gray-300'
+                  }`}
+                >
+                  {attitude.value}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={handleNext}
+            className="bg-green-500 text-white px-4 py-2 rounded mt-4 w-full"
+          >
+            Next
+          </button>
         </div>
       </div>
-
-      {/* Next Button */}
-      <button
-        onClick={handleNext}
-        className="bg-green-500 text-white px-4 py-2 rounded mt-4"
-      >
-        Next
-      </button>
-    </div>
+    </>
   );
 }

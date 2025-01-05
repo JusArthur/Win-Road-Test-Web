@@ -3,14 +3,16 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import supabase from '@/lib/supabase';
+import HeaderBar from '@/components/HeaderBar';
 
 export default function ExamInfo() {
   const router = useRouter();
 
-  const [selectedLocation, setSelectedLocation] = useState(null); // Null for initial state
+  const [selectedLocation, setSelectedLocation] = useState(null);
   const [locations, setLocations] = useState([]);
   const [date, setDate] = useState('');
-  const [examResult, setExamResult] = useState(null); // Change to null
+  const [examResult, setExamResult] = useState(null);
+  const [numAttempt, setNumAttempt] = useState(1); // Default to 1
   const [loadingLocations, setLoadingLocations] = useState(true);
   const [showLocationPicker, setShowLocationPicker] = useState(false);
 
@@ -46,7 +48,7 @@ export default function ExamInfo() {
   };
 
   const handleExamResult = (resultId) => {
-    setExamResult(resultId); // Directly store the numeric ID
+    setExamResult(resultId);
     setError((prev) => ({ ...prev, examResult: '' }));
   };
 
@@ -72,110 +74,131 @@ export default function ExamInfo() {
     setError(errors);
 
     if (isValid) {
+      const parsedNumAttempt = Number(numAttempt); // Ensure it's a number
+
       localStorage.setItem('selectedLocation', selectedLocation);
       localStorage.setItem('date', date);
-      localStorage.setItem('examResult', examResult); // Store numeric ID
+      localStorage.setItem('examResult', examResult);
+      localStorage.setItem('numAttempt', parsedNumAttempt);
 
       router.push('/new-post/MinimalMistakes');
     }
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-xl font-bold mb-4">Exam Info</h1>
+    <>
+      <HeaderBar />
+      <div className="p-6 flex justify-center">
+        <div className="w-full max-w-screen-md">
+          <h1 className="text-xl font-bold mb-4">Exam Info</h1>
 
-      {/* Location Picker */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Select Exam Location</label>
-        <button
-          className={`w-full p-2 border rounded ${
-            error.location ? 'border-red-500' : 'border-gray-300'
-          }`}
-          onClick={() => setShowLocationPicker(true)}
-        >
-          {selectedLocation
-            ? locations.find((loc) => loc.location_id === selectedLocation)?.location_name
-            : 'Select Exam Location'}
-        </button>
-        {error.location && <p className="text-red-500 text-sm mt-1">{error.location}</p>}
-      </div>
-
-      {/* Date Picker */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Exam Date</label>
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-          max={new Date().toISOString().split('T')[0]} // Restrict to today or earlier
-          className={`w-full p-2 border rounded ${
-            error.date ? 'border-red-500' : 'border-gray-300'
-          }`}
-        />
-        {error.date && <p className="text-red-500 text-sm mt-1">{error.date}</p>}
-      </div>
-
-      {/* Exam Result Picker */}
-      <div className="mb-4">
-        <label className="block font-medium mb-2">Exam Result</label>
-        <div className="flex space-x-4">
-          {[
-            { id: 1, name: 'Pass' },
-            { id: 2, name: 'Fail' },
-          ].map((result) => (
+          {/* Location Picker */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Select Exam Location</label>
             <button
-              key={result.id}
-              onClick={() => handleExamResult(result.id)} // Pass numeric ID
-              className={`p-2 rounded border ${
-                examResult === result.id
-                  ? 'bg-green-500 text-white border-green-500'
-                  : 'bg-gray-200 text-black border-gray-300'
+              className={`w-full p-2 border rounded ${
+                error.location ? 'border-red-500' : 'border-gray-300'
               }`}
+              onClick={() => setShowLocationPicker(true)}
             >
-              {result.name}
+              {selectedLocation
+                ? locations.find((loc) => loc.location_id === selectedLocation)?.location_name
+                : 'Select Exam Location'}
             </button>
-          ))}
-        </div>
-        {error.examResult && <p className="text-red-500 text-sm mt-1">{error.examResult}</p>}
-      </div>
-
-      {/* Location Picker Modal */}
-      {showLocationPicker && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end">
-          <div className="bg-white w-full rounded-t-xl p-4">
-            <h2 className="text-lg font-bold mb-4">Select Location</h2>
-            {loadingLocations ? (
-              <p>Loading...</p>
-            ) : (
-              <ul className="divide-y divide-gray-200">
-                {locations.map((location) => (
-                  <li
-                    key={location.location_id}
-                    className="p-4 cursor-pointer hover:bg-gray-100"
-                    onClick={() => handleLocationSelect(location.location_id)}
-                  >
-                    {location.location_name}
-                  </li>
-                ))}
-              </ul>
-            )}
-            <button
-              className="w-full bg-red-500 text-white p-2 mt-4 rounded"
-              onClick={() => setShowLocationPicker(false)}
-            >
-              Close
-            </button>
+            {error.location && <p className="text-red-500 text-sm mt-1">{error.location}</p>}
           </div>
-        </div>
-      )}
 
-      {/* Next Button */}
-      <button
-        onClick={validateAndProceed}
-        className="bg-green-500 text-white w-full p-2 rounded mt-4"
-      >
-        Next
-      </button>
-    </div>
+          {/* Date Picker */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Exam Date</label>
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              max={new Date().toISOString().split('T')[0]}
+              className={`w-full p-2 border rounded ${
+                error.date ? 'border-red-500' : 'border-gray-300'
+              }`}
+            />
+            {error.date && <p className="text-red-500 text-sm mt-1">{error.date}</p>}
+          </div>
+
+          {/* Exam Result Picker */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Exam Result</label>
+            <div className="flex space-x-4">
+              {[{ id: 1, name: 'Pass' }, { id: 2, name: 'Fail' }].map((result) => (
+                <button
+                  key={result.id}
+                  onClick={() => handleExamResult(result.id)}
+                  className={`p-2 rounded border ${
+                    examResult === result.id
+                      ? 'bg-green-500 text-white border-green-500'
+                      : 'bg-gray-200 text-black border-gray-300'
+                  }`}
+                >
+                  {result.name}
+                </button>
+              ))}
+            </div>
+            {error.examResult && <p className="text-red-500 text-sm mt-1">{error.examResult}</p>}
+          </div>
+
+          {/* Number of Attempts */}
+          <div className="mb-4">
+            <label className="block font-medium mb-2">Number of Attempts</label>
+            <select
+              value={numAttempt}
+              onChange={(e) => setNumAttempt(e.target.value)}
+              className={`w-full p-2 border rounded`}
+            >
+              {[...Array(10).keys()].map((i) => (
+                <option key={i + 1} value={i + 1}>
+                  {i + 1}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Location Picker Modal */}
+          {showLocationPicker && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end">
+              <div className="bg-white w-full rounded-t-xl p-4">
+                <h2 className="text-lg font-bold mb-4">Select Location</h2>
+                {loadingLocations ? (
+                  <p>Loading...</p>
+                ) : (
+                  <ul className="divide-y divide-gray-200">
+                    {locations.map((location) => (
+                      <li
+                        key={location.location_id}
+                        className="p-4 cursor-pointer hover:bg-gray-100"
+                        onClick={() => handleLocationSelect(location.location_id)}
+                      >
+                        {location.location_name}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <button
+                  className="w-full bg-red-500 text-white p-2 mt-4 rounded"
+                  onClick={() => setShowLocationPicker(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Next Button */}
+          <button
+            onClick={validateAndProceed}
+            className="bg-green-500 text-white w-full p-2 rounded mt-4"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
