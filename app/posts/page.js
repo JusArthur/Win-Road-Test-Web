@@ -5,8 +5,9 @@ import supabase from '@/lib/supabase';
 import ReviewsList from '@/components/ReviewsList';
 import { useSearchParams } from 'next/navigation'; 
 import HeaderBar from '@/components/HeaderBar';
+import { Suspense } from 'react';
 
-export default function PostsScreen() {
+function PostsContent() {
   const searchParams = useSearchParams();
   const locationId = searchParams.get('id'); 
   const [posts, setPosts] = useState([]);
@@ -28,7 +29,7 @@ export default function PostsScreen() {
 
       if (!locationError) setLocationName(locationData?.location_name || 'Unknown Location');
 
-      // Fetch location
+      // Fetch posts
       const { data: postData, error: postError } = await supabase
         .from('post')
         .select('*, profiles (avatar)')
@@ -47,8 +48,6 @@ export default function PostsScreen() {
   }
 
   return (
-    <>
-    <HeaderBar />
     <div className="max-w-4xl mx-auto mt-6 p-4">
       <h1 className="text-2xl font-bold mb-4">{locationName}</h1>
       {posts.length > 0 ? (
@@ -57,6 +56,16 @@ export default function PostsScreen() {
         <p className="text-gray-500">Here's no any posts yet. Be the first one!</p>
       )}
     </div>
+  );
+}
+
+export default function PostsScreen() {
+  return (
+    <>
+      <HeaderBar />
+      <Suspense fallback={<div className="flex justify-center items-center min-h-screen">Loading...</div>}>
+        <PostsContent />
+      </Suspense>
     </>
   );
 }
