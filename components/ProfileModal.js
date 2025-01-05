@@ -17,18 +17,18 @@ export default function ProfileModal({ onClose }) {
   const [currentAvatar, setCurrentAvatar] = useState(null); // 当前头像
   const [avatarModalOpen, setAvatarModalOpen] = useState(false); // 头像弹窗状态
 
-  // 加载用户数据
+  // load user data
   useEffect(() => {
     const fetchUser = async () => {
       const { data: { user }, error } = await supabase.auth.getUser();
       if (user) {
         setUser(user);
 
-        // 从 profiles 表加载信息
+        // load msgs from profile table
         const { data: profile, error: profileError } = await supabase
           .from('profiles')
           .select('display_name, avatar')
-          .eq('id', user.id) // 确认字段名与数据库一致
+          .eq('id', user.id)
           .single();
 
         if (!profileError) {
@@ -44,7 +44,7 @@ export default function ProfileModal({ onClose }) {
   // 保存新用户名
   const handleSaveUsername = async () => {
     if (!newUsername.trim()) {
-      alert('用户名不能为空！');
+      alert('Username can not be null！');
       return;
     }
 
@@ -58,10 +58,10 @@ export default function ProfileModal({ onClose }) {
 
       setDisplayName(newUsername.trim());
       setEditing(false);
-      alert('用户名已更新！');
+      alert('Username updated！');
     } catch (error) {
       console.error('Error updating username:', error.message);
-      alert('更新用户名失败：' + error.message);
+      alert('Error occurred when updating username：' + error.message);
     }
   };
 
@@ -78,10 +78,10 @@ export default function ProfileModal({ onClose }) {
 
       setCurrentAvatar(avatars[avatarIndex]);
       setAvatarModalOpen(false);
-      alert('头像已更新！');
+      alert('Avatar updated！');
     } catch (error) {
       console.error('Error updating avatar:', error.message);
-      alert('更新头像失败：' + error.message);
+      alert('Error occurred：' + error.message);
     }
   };
 
@@ -95,7 +95,7 @@ export default function ProfileModal({ onClose }) {
           ✕
         </button>
         {/* 更亮的标题 */}
-        <h2 className="text-2xl font-extrabold text-center mb-4 text-black">个人资料</h2>
+        <h2 className="text-2xl font-extrabold text-center mb-4 text-black">Profile</h2>
   
         {/* 用户头像部分 */}
         <div className="flex flex-col items-center mb-6">
@@ -116,7 +116,7 @@ export default function ProfileModal({ onClose }) {
           )}
         </div>
   
-        {/* 显示用户名 */}
+        {/* Display username */}
         <div className="flex flex-col items-center">
           {editing ? (
             <div className="flex flex-col items-center">
@@ -125,20 +125,20 @@ export default function ProfileModal({ onClose }) {
                 value={newUsername}
                 onChange={(e) => setNewUsername(e.target.value)}
                 className="border rounded px-2 py-1 w-full text-black"
-                placeholder="输入新用户名"
+                placeholder="Enter new username"
               />
               <div className="mt-2 flex space-x-2">
                 <button
                   onClick={handleSaveUsername}
                   className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
                 >
-                  保存
+                  Save
                 </button>
                 <button
                   onClick={() => setEditing(false)}
                   className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
                 >
-                  取消
+                  Cancle
                 </button>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function ProfileModal({ onClose }) {
                 onClick={() => setEditing(true)}
                 className="ml-2 text-blue-500 hover:text-blue-600"
               >
-                编辑
+                Edit
               </button>
             </div>
           )}

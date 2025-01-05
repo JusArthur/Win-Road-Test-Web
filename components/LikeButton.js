@@ -33,7 +33,7 @@ export default function LikeButton({ initialLikes = 0, user, postId }) {
   // 点赞/取消点赞逻辑
   const handleLike = async () => {
     if (!user) {
-      alert('请先登录才能点赞！');
+      alert('Please log in before like！');
       return;
     }
 
@@ -53,7 +53,7 @@ export default function LikeButton({ initialLikes = 0, user, postId }) {
       let updatedLikes = likes;
 
       if (isLiked) {
-        // 取消点赞
+        // Cancle like, wait to be constructed
         const updatedLikedByUsers = likedByUsers.filter((id) => id !== user.id);
 
         const { error: unlikeError } = await supabase
@@ -72,7 +72,7 @@ export default function LikeButton({ initialLikes = 0, user, postId }) {
         updatedLikes -= 1;
         setIsLiked(false);
       } else {
-        // 点赞
+        // Like
         const updatedLikedByUsers = [...likedByUsers, user.id];
 
         const { error: likeError } = await supabase
@@ -106,7 +106,7 @@ export default function LikeButton({ initialLikes = 0, user, postId }) {
       }`}
     >
       <span className={`text-sm font-semibold ${isLiked ? 'text-white' : 'text-gray-600'}`}>
-        {isLiked ? '已点赞' : '点赞'}
+        {isLiked ? 'Liked' : 'Like'}
       </span>
       <span className="text-sm">{likes}</span>
     </button>
