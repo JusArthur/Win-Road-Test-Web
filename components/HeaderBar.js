@@ -70,8 +70,8 @@ export default function HeaderBar() {
           alt="Win Road Test Logo"
           className="h-10 w-auto"
         />
-        <h1 className="text-xl font-bold ml-2 text-gray-800 hover:text-blue-500">
-          Win YOUR Game Now!
+        <h1 className="text-xl font-bold ml-2 text-gray-800 hover:text-blue-500 hidden md:block">
+          Win Road Test!
         </h1>
       </Link>
 

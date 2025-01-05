@@ -5,6 +5,7 @@ import supabase from '../lib/supabase';
 import CategoryGridTile from '../components/CategoryGridTile';
 import HeaderBar from '@/components/HeaderBar';
 import { useRouter } from 'next/navigation';
+import FloatingActionButton from '@/components/FloatingActionButton';
 
 const locationImages = {
   1: '/images/locations/st_mary.jpg',
@@ -27,7 +28,7 @@ export default function Home() {
   }, []);
 
   const handlePress = (id) => {
-    router.push(`/posts?id=${id}`); // 将地点 ID 作为查询参数传递
+    router.push(`/posts?id=${id}`); // Pass the location id as parameter
   };
 
   return (
@@ -45,6 +46,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <FloatingActionButton />
     </div>
   );
 }

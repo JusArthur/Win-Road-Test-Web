@@ -3,12 +3,12 @@
 import { useState, useEffect } from 'react';
 import supabase from '@/lib/supabase';
 import ReviewsList from '@/components/ReviewsList';
-import { useSearchParams } from 'next/navigation'; // 获取查询参数
+import { useSearchParams } from 'next/navigation'; 
 import HeaderBar from '@/components/HeaderBar';
 
 export default function PostsScreen() {
   const searchParams = useSearchParams();
-  const locationId = searchParams.get('id'); // 获取地点 ID
+  const locationId = searchParams.get('id'); 
   const [posts, setPosts] = useState([]);
   const [locationName, setLocationName] = useState('');
   const [loading, setLoading] = useState(true);
@@ -19,7 +19,7 @@ export default function PostsScreen() {
     const fetchData = async () => {
       setLoading(true);
 
-      // 获取地点名称
+      // Fetch location name
       const { data: locationData, error: locationError } = await supabase
         .from('test_location')
         .select('location_name')
@@ -28,7 +28,7 @@ export default function PostsScreen() {
 
       if (!locationError) setLocationName(locationData?.location_name || 'Unknown Location');
 
-      // 获取地点相关的帖子
+      // Fetch location
       const { data: postData, error: postError } = await supabase
         .from('post')
         .select('*, profiles (avatar)')
@@ -43,7 +43,7 @@ export default function PostsScreen() {
   }, [locationId]);
 
   if (loading) {
-    return <div className="flex justify-center items-center min-h-screen">加载中...</div>;
+    return <div className="flex justify-center items-center min-h-screen">Loading...</div>;
   }
 
   return (
@@ -54,7 +54,7 @@ export default function PostsScreen() {
       {posts.length > 0 ? (
         <ReviewsList items={posts} />
       ) : (
-        <p className="text-gray-500">暂无帖子</p>
+        <p className="text-gray-500">Here's no any posts yet. Be the first one!</p>
       )}
     </div>
     </>
