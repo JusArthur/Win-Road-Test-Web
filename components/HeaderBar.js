@@ -10,6 +10,7 @@ export default function HeaderBar() {
   const [loading, setLoading] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false); // 控制登录弹窗的显示
+  const [isRegisterMode, setIsRegisterMode] = useState(false); // 是否为注册模式
 
   // 登录功能
   const handleLogin = async () => {
@@ -33,6 +34,30 @@ export default function HeaderBar() {
       }
     } catch (error) {
       alert("An unexpected error occurred: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 注册功能
+  const handleRegister = async () => {
+    if (loading) return;
+    setLoading(true);
+
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+
+      if (error) {
+        alert("Registration failed: " + error.message);
+      } else {
+        alert("Registration successful! Please log in.");
+        setIsRegisterMode(false); // 切换回登录模式
+      }
+    } catch (error) {
+      console.error("Unexpected error during registration:", error);
     } finally {
       setLoading(false);
     }
@@ -113,7 +138,7 @@ export default function HeaderBar() {
         />
       )}
 
-      {/* 登录弹窗 */}
+      {/* 登录/注册弹窗 */}
       {isLoginOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-md w-80 relative">
@@ -123,7 +148,9 @@ export default function HeaderBar() {
             >
               ✕
             </button>
-            <h2 className="text-xl font-bold mb-4">Login</h2>
+            <h2 className="text-xl font-bold mb-4">
+              {isRegisterMode ? "Register" : "Login"}
+            </h2>
             <div className="mb-4">
               <input
                 type="email"
@@ -143,14 +170,37 @@ export default function HeaderBar() {
               />
             </div>
             <button
-              onClick={handleLogin}
+              onClick={isRegisterMode ? handleRegister : handleLogin}
               className={`w-full py-2 rounded-lg text-white ${
                 loading ? "bg-gray-700" : "bg-green-500 hover:bg-green-600"
               }`}
               disabled={loading}
             >
-              {loading ? "Logging in..." : "Login"}
+              {loading ? "Processing..." : isRegisterMode ? "Register" : "Login"}
             </button>
+            <p className="text-center text-sm mt-4">
+              {isRegisterMode ? (
+                <>
+                  Already have an account?{" "}
+                  <span
+                    onClick={() => setIsRegisterMode(false)}
+                    className="text-blue-500 cursor-pointer hover:underline"
+                  >
+                    Login
+                  </span>
+                </>
+              ) : (
+                <>
+                  Don&apos;t have an account?{" "}
+                  <span
+                    onClick={() => setIsRegisterMode(true)}
+                    className="text-blue-500 cursor-pointer hover:underline"
+                  >
+                    Register
+                  </span>
+                </>
+              )}
+            </p>
           </div>
         </div>
       )}
