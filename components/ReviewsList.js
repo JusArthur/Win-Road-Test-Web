@@ -108,7 +108,7 @@ export default function ReviewsList({ items, isDeletable, onDelete, user }) {
       <div className="flex justify-center items-center min-h-screen">
         <div className="text-center">
           <div className="loader mb-4" />
-          <p className="text-gray-500">加载中...</p>
+          <p className="text-gray-500">Loading...</p>
         </div>
       </div>
     );
@@ -118,15 +118,15 @@ export default function ReviewsList({ items, isDeletable, onDelete, user }) {
   if (!items || items.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <p className="text-gray-500 text-lg">暂无评论</p>
-        <p className="text-gray-400 text-sm">成为第一个留下评论的人！</p>
+        <p className="text-gray-500 text-lg">No Posts right now</p>
+        <p className="text-gray-400 text-sm">Be the first one to post！</p>
       </div>
     );
   }
 
   // 显示评论列表
   return (
-    <div className="grid grid-cols-1 gap-4">
+    <div className="grid grid-cols-1 gap-4 whitespace-pre-line">
       {items.map((item) => renderReview(item))}
     </div>
   );
