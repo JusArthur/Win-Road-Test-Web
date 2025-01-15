@@ -29,7 +29,8 @@ export default function ReviewItem({
   initialLikes,
   user,
 }) {
-  const [detailsVisible, setDetailsVisible] = useState(false);
+  // 默认展开详情
+  const [detailsVisible, setDetailsVisible] = useState(true);
 
   const toggleDetails = () => {
     setDetailsVisible((prev) => !prev);
@@ -107,11 +108,12 @@ export default function ReviewItem({
         </div>
       )}
 
+      {/* Show/Hide Button */}
       <button
         onClick={toggleDetails}
         className="text-sm text-blue-500 mt-2 hover:underline"
       >
-        {detailsVisible ? 'Hide Details' : 'Show Details'}
+        {detailsVisible ? 'Show Less' : 'Show Details'}
       </button>
 
       {/* Footer Section */}
