@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import supabase from '@/lib/supabase';
 import LikeButton from '@/components/LikeButton';
 
@@ -29,17 +29,21 @@ export default function ReviewItem({
   initialLikes,
   user,
 }) {
-  const [detailsVisible, setDetailsVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const toggleDetails = () => {
-    setDetailsVisible((prev) => !prev);
-  };
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleDelete = () => {
     if (confirm('Are you sure you want to delete this review?')) {
       onDelete(id);
     }
   };
+
+  if (!mounted) {
+    return null; // Return null on server-side and first render
+  }
 
   return (
     <div className="bg-white shadow-md rounded-lg p-6 my-4 hover:shadow-lg transition-shadow duration-300">
@@ -107,13 +111,6 @@ export default function ReviewItem({
           </div>
         )}
       </div>
-
-      <button
-        onClick={toggleDetails}
-        className="text-sm text-blue-500 mt-2 hover:underline"
-      >
-        {detailsVisible ? 'Hide Details' : 'Show Details'}
-      </button>
 
       {/* Footer Section */}
       <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
