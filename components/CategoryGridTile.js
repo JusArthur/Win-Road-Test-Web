@@ -6,7 +6,8 @@ export default function CategoryGridTile({ location, onClick, imgUrl }) {
           onClick={onClick}
         >
           <div
-            className="w-full h-32 bg-cover bg-center flex items-center justify-center"
+          // changed h-32 to 60
+            className="w-full h-60 bg-cover bg-center flex items-center justify-center"
             style={{ backgroundImage: `url(${imgUrl})` }}
           >
             <div className="bg-black/40 p-4 rounded-2xl text-center">

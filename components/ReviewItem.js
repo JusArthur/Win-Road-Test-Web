@@ -29,6 +29,12 @@ export default function ReviewItem({
   initialLikes,
   user,
 }) {
+  const [detailsVisible, setDetailsVisible] = useState(false);
+
+  const toggleDetails = () => {
+    setDetailsVisible((prev) => !prev);
+  };
+
   const handleDelete = () => {
     if (confirm('Are you sure you want to delete this review?')) {
       onDelete(id);
@@ -101,6 +107,13 @@ export default function ReviewItem({
           </div>
         )}
       </div>
+
+      <button
+        onClick={toggleDetails}
+        className="text-sm text-blue-500 mt-2 hover:underline"
+      >
+        {detailsVisible ? 'Hide Details' : 'Show Details'}
+      </button>
 
       {/* Footer Section */}
       <div className="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">

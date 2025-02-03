@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import supabase from '@/lib/supabase';
 import HeaderBar from '@/components/HeaderBar';
@@ -15,6 +15,8 @@ export default function ExamInfo() {
   const [numAttempt, setNumAttempt] = useState(1); // Default to 1
   const [loadingLocations, setLoadingLocations] = useState(true);
   const [showLocationPicker, setShowLocationPicker] = useState(false);
+
+  const dateInputRef = useRef(null); // Ref for the date input field
 
   const [error, setError] = useState({
     location: '',
@@ -111,15 +113,22 @@ export default function ExamInfo() {
           {/* Date Picker */}
           <div className="mb-4">
             <label className="block font-medium mb-2">Exam Date</label>
-            <input
-              type="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              max={new Date().toISOString().split('T')[0]}
+            <div
               className={`w-full p-2 border rounded ${
                 error.date ? 'border-red-500' : 'border-gray-300'
-              }`}
-            />
+              } flex items-center`}
+              onClick={() => dateInputRef.current?.showPicker()} // Use showPicker to open date picker
+              style={{ cursor: 'pointer' }}
+            >
+              <input
+                ref={dateInputRef} // Attach ref to input
+                type="date"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+                max={new Date().toISOString().split('T')[0]}
+                className="w-full p-2 bg-transparent outline-none"
+              />
+            </div>
             {error.date && <p className="text-red-500 text-sm mt-1">{error.date}</p>}
           </div>
 
