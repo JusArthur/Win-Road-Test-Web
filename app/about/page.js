@@ -1,11 +1,9 @@
 'use client';
 import React from 'react';
-import HeaderBar from '../../components/HeaderBar';
 
 export default function About() {
   return (
     <div>
-      <HeaderBar />
       <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
@@ -13,15 +11,32 @@ export default function About() {
           </h1>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Yunfei's Profile */}
+            {/* Fan's Profile */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Yunfei</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Fan Luo</h2>
               <p className="text-gray-600 mb-4">
                 Full-stack developer with expertise in React and Node.js. Passionate about
                 creating user-friendly applications and solving complex problems.
               </p>
               <div className="flex items-center space-x-4">
-                <a href="https://github.com/LeslieWu-rrc" 
+                <a href="https://github.com/fluo-rrc" 
+                   className="text-blue-500 hover:text-blue-700"
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+          {/* Zizhang's Profile */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Zizhang He</h2>
+              <p className="text-gray-600 mb-4">
+                Software Developer in MPI. Skilled in backend development and database management. Dedicated to
+                building efficient and scalable applications to enhance user experience.
+              </p>
+              <div className="flex items-center space-x-4">
+                <a href="https://github.com/hzz4343" 
                    className="text-blue-500 hover:text-blue-700"
                    target="_blank" 
                    rel="noopener noreferrer">

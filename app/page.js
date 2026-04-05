@@ -28,9 +28,9 @@ export default function Home() {
 
   return (
     <main className="max-w-4xl mx-auto mt-12 p-6 text-center">
+      
       <h1 className="text-4xl font-extrabold text-blue-900 mb-2">MPI Practice Test</h1>
       <p className="text-gray-500 mb-8">Prepare for the Manitoba Knowledge Test</p>
-
       {/* Question Count Toggle */}
       <div className="mb-10">
         <label className="block text-sm font-bold text-gray-700 uppercase tracking-wide mb-3">
