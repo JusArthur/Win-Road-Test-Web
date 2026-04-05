@@ -376,7 +376,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_222.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_222.png",
     "ai_advice": "This R-24 sign prohibits truck traffic on specified routes to reduce congestion and road damage, per Manitoba Signage Regulations.",
     "answers": [
       {
@@ -401,7 +401,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_223.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_223.png",
     "ai_advice": "This sign designates reserved lanes for specific vehicles (e.g., buses, bicycles) during posted times.",
     "answers": [
       {
@@ -426,7 +426,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_224.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_224.png",
     "ai_advice": "W-350 sign warns of playground zones where 30 km/h limits may apply during specified hours under Municipal By-Laws.",
     "answers": [
       {
@@ -451,7 +451,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_225.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_225.png",
     "ai_advice": "This R-27 sign designates truck routes where commercial vehicles must stay, per City of Winnipeg Traffic By-Law No. 7156/2019.",
     "answers": [
       {
@@ -476,7 +476,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_226.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_226.png",
     "ai_advice": "W-360 sign warns of pavement ending, requiring drivers to reduce speed and prepare for gravel/dirt road conditions ahead.",
     "answers": [
       {
@@ -872,7 +872,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_227.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_227.png",
     "ai_advice": "Yield sign requires slowing and yielding right-of-way to traffic on the through road.",
     "answers": [
       {
@@ -897,7 +897,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_228.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_228.png",
     "ai_advice": "W-31 slow-moving vehicle emblem identifies vehicles traveling ≤40 km/h. Maintain safe following distance when approaching.",
     "answers": [
       {
@@ -922,7 +922,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_229.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_229.png",
     "ai_advice": "W-370 snow route sign indicates roads prioritized for winter maintenance under municipal snow clearing policies.",
     "answers": [
       {
@@ -947,7 +947,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_230.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_230.png",
     "ai_advice": "R-35 sign prohibits right turns at specified locations. Check for supplementary plates indicating time restrictions.",
     "answers": [
       {
@@ -972,7 +972,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_231.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_231.png",
     "ai_advice": "W-24 sign warns of three or more curves ahead. Reduce speed and maintain lane position through sequence.",
     "answers": [
       {
@@ -1284,7 +1284,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_232.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_232.png",
     "ai_advice": "W-33 sign indicates the left lane ends ahead. Merge right safely.",
     "answers": [
       { "answerText": "Speed up.", "correct": false },
@@ -1297,7 +1297,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_233.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_233.png",
     "ai_advice": "W-350 sign warns of an upcoming pedestrian crosswalk. Reduce speed and watch for pedestrians.",
     "answers": [
       { "answerText": "Pedestrian crosswalk ahead.", "correct": true },
@@ -1310,7 +1310,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_234.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_234.png",
     "ai_advice": "R-51 sign indicates a 60 km/h speed limit ahead. Adjust speed gradually to comply.",
     "answers": [
       { "answerText": "Speed limit ahead.", "correct": false },
@@ -1323,7 +1323,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_235.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_235.png",
     "ai_advice": "W-21 sign warns of a barricade or obstruction ahead. Proceed with caution and follow detour instructions.",
     "answers": [
       { "answerText": "Road merges.", "correct": false },
@@ -1336,7 +1336,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_236.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_236.png",
     "ai_advice": "W-23 sign indicates a steep hill ahead. Check brakes and maintain safe speed.",
     "answers": [
       { "answerText": "Truck ahead.", "correct": false },
@@ -1619,7 +1619,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_237.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_237.png",
     "ai_advice": "W-34 sign indicates merging roadways ahead. Adjust speed and prepare to merge safely.",
     "answers": [
       { "answerText": "Merging roadways ahead.", "correct": true },
@@ -1632,7 +1632,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_238.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_238.png",
     "ai_advice": "W-22 sign warns of low clearance ahead. Check vehicle height and avoid routes with insufficient clearance.",
     "answers": [
       { "answerText": "Bridge ahead.", "correct": false },
@@ -1645,7 +1645,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_239.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_239.png",
     "ai_advice": "R-52 sign indicates a recommended exit speed of 40 km/h. Adjust speed gradually for safe maneuvering.",
     "answers": [
       { "answerText": "Maximum recommended for trucks.", "correct": false },
@@ -1661,7 +1661,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_240.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_240.png",
     "ai_advice": "R-35 sign indicates mandatory right turns during specified times. Follow posted instructions to avoid violations.",
     "answers": [
       {
@@ -1677,7 +1677,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_241.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_241.png",
     "ai_advice": "R-36 sign prohibits turns. Proceed straight and find an alternate route if necessary.",
     "answers": [
       { "answerText": "One-way traffic.", "correct": false },
@@ -1966,7 +1966,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_242.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_242.png",
     "ai_advice": "sign indicates the road ends ahead. Prepare to exit right or left as directed.",
     "answers": [
       { "answerText": "Municipal road ends.", "correct": false },
@@ -1979,7 +1979,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_243.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_243.png",
     "ai_advice": "W-350 sign warns of a school crosswalk ahead. Reduce speed and watch for children.",
     "answers": [
       { "answerText": "Pedestrian crosswalk ahead.", "correct": false },
@@ -1992,7 +1992,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_244.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_244.png",
     "ai_advice": "R-37 sign prohibits left turns. Follow posted instructions to avoid violations.",
     "answers": [
       { "answerText": "No left turn.", "correct": true },
@@ -2005,7 +2005,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_245.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_245.png",
     "ai_advice": "R-38 sign indicates drivers must keep right of the sign. Follow directional instructions for safety.",
     "answers": [
       { "answerText": "Slow traffic keep right.", "correct": false },
@@ -2018,7 +2018,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_246.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_246.png",
     "ai_advice": "R-39 sign indicates a mandatory left turn lane. Follow directional instructions to avoid violations.",
     "answers": [
       { "answerText": "Exit ahead.", "correct": false },
@@ -2289,7 +2289,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_247.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_247.png",
     "ai_advice": "sign indicates a hazard marker showing an obstruction. Proceed with caution.",
     "answers": [
       { "answerText": "Low overhead clearance.", "correct": false },
@@ -2302,7 +2302,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_248.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_248.png",
     "ai_advice": "Sign indicates all traffic must turn left. Follow directional instructions to avoid violations.",
     "answers": [
       { "answerText": "All traffic must slow down.", "correct": false },
@@ -2315,7 +2315,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_249.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_249.png",
     "ai_advice": "R-41 sign prohibits stopping to wait. Follow posted instructions to avoid violations.",
     "answers": [
       { "answerText": "No parking.", "correct": false },
@@ -2328,7 +2328,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_250.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_250.png",
     "ai_advice": "R-42 sign indicates through traffic is not permitted. Follow posted instructions to avoid violations.",
     "answers": [
       { "answerText": "Right turn only.", "correct": false },
@@ -2341,7 +2341,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_251.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_251.png",
     "ai_advice": "W-37 sign warns of a railway crossing ahead. Reduce speed and prepare to stop if necessary.",
     "answers": [
       { "answerText": "Railway crossing.", "correct": true },
@@ -2705,7 +2705,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_252.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_252.png",
     "ai_advice": "Sign indicates school crosswalk ahead. It is mandatory to reduce speed to 30km/h when children are present.",
     "answers": [
       {
@@ -2730,7 +2730,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_253.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_253.png",
     "ai_advice": "Sign marks beginning of passing lane. It is permitted to pass only when safe and permitted by pavement markings.",
     "answers": [
       {
@@ -2755,7 +2755,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_254.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_254.png",
     "ai_advice": "Stop sign requires full stop before crosswalk. It is mandatory to stop at marked stop line or before entering intersection.",
     "answers": [
       {
@@ -2780,7 +2780,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_255.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_255.png",
     "ai_advice": "Sign warns of traffic island ahead. It is prohibited to drive over traffic islands except where authorized.",
     "answers": [
       {
@@ -2805,7 +2805,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_256.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_256.png",
     "ai_advice": "Sign indicates one-way traffic. It is mandatory to drive in direction of arrow only. Applies 24/7 unless supplementary plate indicates otherwise.",
     "answers": [
       {
@@ -3205,7 +3205,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_257.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_257.png",
     "answers": [
       {
         "answerText": "No right turn on Saturday.",
@@ -3230,7 +3230,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_258.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_258.png",
     "answers": [
       {
         "answerText": "Median ahead.",
@@ -3255,7 +3255,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_259.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_259.png",
     "answers": [
       {
         "answerText": "Sharp right curve, trucks maximum speed 40 km/h.",
@@ -3280,7 +3280,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_260.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_260.png",
     "answers": [
       {
         "answerText": "Merging traffic.",
@@ -3305,7 +3305,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_261.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_261.png",
     "answers": [
       {
         "answerText": "Reserved Bus Lane ahead.",
@@ -3705,7 +3705,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_262.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_262.png",
     "answers": [
       {
         "answerText": "Wet roads.",
@@ -3730,7 +3730,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_263.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_263.png",
     "answers": [
       {
         "answerText": "Detour ahead.",
@@ -3755,7 +3755,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_264.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_264.png",
     "answers": [
       {
         "answerText": "Road narrows.",
@@ -3780,7 +3780,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_265.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_265.png",
     "answers": [
       {
         "answerText": "Road work .",
@@ -3805,7 +3805,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_266.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_266.png",
     "answers": [
       {
         "answerText": "Curve in the road.",
@@ -4197,7 +4197,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_267.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_267.png",
     "answers": [
       {
         "answerText": "Construction area.",
@@ -4222,7 +4222,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_268.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_268.png",
     "answers": [
       {
         "answerText": "Maximum speed 90 km/h.",
@@ -4247,7 +4247,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_269.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_269.png",
     "answers": [
       {
         "answerText": "Playground corridor.",
@@ -4272,7 +4272,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_270.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_270.png",
     "answers": [
       {
         "answerText": "Icy road.",
@@ -4297,7 +4297,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_271.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_271.png",
     "answers": [
       {
         "answerText": "One-way traffic.",
@@ -4697,7 +4697,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_272.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_272.png",
     "answers": [
       {
         "answerText": "Stop ahead.",
@@ -4722,7 +4722,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_273.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_273.png",
     "answers": [
       {
         "answerText": "School crosswalk.",
@@ -4747,7 +4747,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_274.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_274.png",
     "answers": [
       {
         "answerText": "Divided highway ends.",
@@ -4772,7 +4772,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_275.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_275.png",
     "answers": [
       {
         "answerText": "Slippery when wet.",
@@ -4797,7 +4797,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_276.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_276.png",
     "answers": [
       {
         "answerText": "No parking between 15:30 - 17:30 hrs.",
@@ -5197,7 +5197,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_277.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_277.png",
     "answers": [
       {
         "answerText": "Passenger vehicles only.",
@@ -5222,7 +5222,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_278.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_278.png",
     "answers": [
       {
         "answerText": "Angled railway crossing.",
@@ -5247,7 +5247,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_279.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_279.png",
     "answers": [
       {
         "answerText": "Intersection ahead.",
@@ -5272,7 +5272,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_280.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_280.png",
     "answers": [
       {
         "answerText": "Right turn only.",
@@ -5297,7 +5297,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_281.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_281.png",
     "answers": [
       {
         "answerText": "Do not pass to intersection.",
@@ -5697,7 +5697,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_282.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_282.png",
     "answers": [
       {
         "answerText": "Intersection ahead.",
@@ -5722,7 +5722,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_283.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_283.png",
     "answers": [
       {
         "answerText": "Wildlife sanctuary.",
@@ -5747,7 +5747,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_284.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_284.png",
     "answers": [
       {
         "answerText": "Exit lane.",
@@ -5772,7 +5772,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_285.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_285.png",
     "answers": [
       {
         "answerText": "Right turn allowed.",
@@ -5797,7 +5797,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_286.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_286.png",
     "answers": [
       {
         "answerText": "Playground zone.",
@@ -6193,7 +6193,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_287.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_287.png",
     "answers": [
       {
         "answerText": "Enter at your own risk.",
@@ -6218,7 +6218,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_288.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_288.png",
     "answers": [
       {
         "answerText": "No right turn allowed.",
@@ -6243,7 +6243,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_289.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_289.png",
     "answers": [
       {
         "answerText": "Do not pass.",
@@ -6268,7 +6268,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_290.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_290.png",
     "answers": [
       {
         "answerText": "Parking permitted as indicated.",
@@ -6293,7 +6293,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_291.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_291.png",
     "answers": [
       {
         "answerText": "Rough road.",
@@ -6593,7 +6593,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_292.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_292.png",
     "answers": [
       {
         "answerText": "Construction zone.",
@@ -6618,7 +6618,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_293.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_293.png",
     "answers": [
       {
         "answerText": "Maximum truck speed 40 km/h when meeting traffic.",
@@ -6643,7 +6643,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_294.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_294.png",
     "answers": [
       {
         "answerText": "Entering town limits.",
@@ -6668,7 +6668,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_295.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_295.png",
     "answers": [
       {
         "answerText": "Road slippery when wet.",
@@ -6693,7 +6693,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_296.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_296.png",
     "answers": [
       {
         "answerText": "Traffic must turn right.",
@@ -6718,7 +6718,7 @@
   },
   {
     "question_text": "This sign means:",
-    "imgUrl": "/DriverQuiz/images/class5/image_297.svg",
+    "imgUrl": "/DriverQuiz/images/class5/image_297.png",
     "answers": [
       {
         "answerText": "Crossroad ahead.",
