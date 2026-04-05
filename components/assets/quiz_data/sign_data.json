@@ -1,0 +1,1902 @@
+[
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_222.svg",
+    "ai_advice": "This Sign prohibits truck traffic on specified routes to reduce congestion and road damage, per Manitoba Signage Regulations.",
+    "answers": [
+      {
+        "answerText": "No traffic allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "No trucks allowed.",
+        "correct": true
+      },
+      {
+        "answerText": "Trucks allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "No cars allowed.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "No trucks allowed.",
+    "id": 222
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_223.svg",
+    "ai_advice": "This sign designates reserved lanes for specific vehicles (e.g., buses, bicycles) during posted times.",
+    "answers": [
+      {
+        "answerText": "No right turn.",
+        "correct": false
+      },
+      {
+        "answerText": "Trucks only.",
+        "correct": false
+      },
+      {
+        "answerText": "Reserved Lane located in median lane.",
+        "correct": true
+      },
+      {
+        "answerText": "No right turn between 08:30 - 17:30.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Reserved Lane located in median lane.",
+    "id": 223
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_224.svg",
+    "ai_advice": "This sign warns of playground zones where 30 km/h limits may apply during specified hours under Municipal By-Laws.",
+    "answers": [
+      {
+        "answerText": "School area ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Children playing.",
+        "correct": false
+      },
+      {
+        "answerText": "Soccer field ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Playground ahead.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Playground ahead.",
+    "id": 224
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_225.svg",
+    "ai_advice": "This sign designates truck routes where commercial vehicles must stay, per City of Winnipeg Traffic By-Law No. 7156/2019.",
+    "answers": [
+      {
+        "answerText": "Do not enter.",
+        "correct": false
+      },
+      {
+        "answerText": "Truck route.",
+        "correct": true
+      },
+      {
+        "answerText": "Secondary street.",
+        "correct": false
+      },
+      {
+        "answerText": "No buses.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Truck route.",
+    "id": 225
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_226.svg",
+    "ai_advice": "This sign warns of pavement ending, requiring drivers to reduce speed and prepare for gravel/dirt road conditions ahead.",
+    "answers": [
+      {
+        "answerText": "Leaving city limits.",
+        "correct": false
+      },
+      {
+        "answerText": "Slippery when wet.",
+        "correct": false
+      },
+      {
+        "answerText": "Pavement ends.",
+        "correct": true
+      },
+      {
+        "answerText": "Municipal road begins.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Pavement ends.",
+    "id": 226
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_227.svg",
+    "ai_advice": "This sign requires slowing and yielding right-of-way to traffic on the through road.",
+    "answers": [
+      {
+        "answerText": "Go.",
+        "correct": false
+      },
+      {
+        "answerText": "Yield.",
+        "correct": true
+      },
+      {
+        "answerText": "Speed up.",
+        "correct": false
+      },
+      {
+        "answerText": "Stop.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Yield.",
+    "id": 227
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_228.svg",
+    "ai_advice": "This sign identifies vehicles traveling ≤40 km/h. Maintain safe following distance when approaching.",
+    "answers": [
+      {
+        "answerText": "Speed zone.",
+        "correct": false
+      },
+      {
+        "answerText": "Caution.",
+        "correct": false
+      },
+      {
+        "answerText": "Warning.",
+        "correct": false
+      },
+      {
+        "answerText": "Slow moving vehicle.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Slow moving vehicle.",
+    "id": 228
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_229.svg",
+    "ai_advice": "This sign indicates roads prioritized for winter maintenance under municipal snow clearing policies.",
+    "answers": [
+      {
+        "answerText": "Winter road.",
+        "correct": false
+      },
+      {
+        "answerText": "Snowmobile only.",
+        "correct": false
+      },
+      {
+        "answerText": "Slippery when wet.",
+        "correct": false
+      },
+      {
+        "answerText": "Snow route.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Snow route.",
+    "id": 229
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_230.svg",
+    "ai_advice": "This sign prohibits right turns at specified locations. Check for supplementary plates indicating time restrictions.",
+    "answers": [
+      {
+        "answerText": "Do not enter.",
+        "correct": false
+      },
+      {
+        "answerText": "No right turn during rush hour.",
+        "correct": false
+      },
+      {
+        "answerText": "No right turn.",
+        "correct": true
+      },
+      {
+        "answerText": "Buses may turn right.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "No right turn.",
+    "id": 230
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_231.svg",
+    "ai_advice": "This sign warns of three or more curves ahead. Reduce speed and maintain lane position through sequence.",
+    "answers": [
+      {
+        "answerText": "Curves ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Slippery surface.",
+        "correct": false
+      },
+      {
+        "answerText": "Winding road ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Icy conditions.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Winding road ahead.",
+    "id": 231
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_232.svg",
+    "ai_advice": "This sign indicates the left lane ends ahead. Merge right safely.",
+    "answers": [
+      {
+        "answerText": "Speed up.",
+        "correct": false
+      },
+      {
+        "answerText": "Slow down.",
+        "correct": false
+      },
+      {
+        "answerText": "Left lane ends ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Intersection ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Left lane ends ahead.",
+    "id": 232
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_233.svg",
+    "ai_advice": "This sign warns of an upcoming pedestrian crosswalk. Reduce speed and watch for pedestrians.",
+    "answers": [
+      {
+        "answerText": "Pedestrian crosswalk ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Playground crosswalk ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Children playing ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "School ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Pedestrian crosswalk ahead.",
+    "id": 233
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_234.svg",
+    "ai_advice": "This sign indicates a 60 km/h speed limit ahead. Adjust speed gradually to comply.",
+    "answers": [
+      {
+        "answerText": "Speed limit ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Maximum speed 60 km/h ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Reduce speed ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Trucks must reduce speed ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Maximum speed 60 km/h ahead.",
+    "id": 234
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_235.svg",
+    "ai_advice": "This sign warns of a barricade or obstruction ahead. Proceed with caution and follow detour instructions.",
+    "answers": [
+      {
+        "answerText": "Road merges.",
+        "correct": false
+      },
+      {
+        "answerText": "Construction ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Barricade ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Speed limit ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Barricade ahead.",
+    "id": 235
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_236.svg",
+    "ai_advice": "This sign indicates a steep hill ahead. Check brakes and maintain safe speed.",
+    "answers": [
+      {
+        "answerText": "Truck ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Steep hill ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Trucks turning.",
+        "correct": false
+      },
+      {
+        "answerText": "Loss of traction.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Steep hill ahead.",
+    "id": 236
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_237.svg",
+    "ai_advice": "This sign indicates merging roadways ahead. Adjust speed and prepare to merge safely.",
+    "answers": [
+      {
+        "answerText": "Merging roadways ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Entering two-way roadway.",
+        "correct": false
+      },
+      {
+        "answerText": "Slow down.",
+        "correct": false
+      },
+      {
+        "answerText": "Turn right.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Merging roadways ahead.",
+    "id": 237
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_238.svg",
+    "ai_advice": "This sign warns of low clearance ahead. Check vehicle height and avoid routes with insufficient clearance.",
+    "answers": [
+      {
+        "answerText": "Bridge ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Low structure clearance ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Narrow road.",
+        "correct": false
+      },
+      {
+        "answerText": "Narrow bridge.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Low structure clearance ahead.",
+    "id": 238
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_239.svg",
+    "ai_advice": "This sign indicates a recommended exit speed of 40 km/h. Adjust speed gradually for safe maneuvering.",
+    "answers": [
+      {
+        "answerText": "Maximum recommended for trucks.",
+        "correct": false
+      },
+      {
+        "answerText": "Maximum speed when slippery.",
+        "correct": false
+      },
+      {
+        "answerText": "Maximum speed when wet.",
+        "correct": false
+      },
+      {
+        "answerText": "Maximum recommended speed on exit 40 km/h.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Maximum recommended speed on exit 40 km/h.",
+    "id": 239
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_240.svg",
+    "ai_advice": "This sign indicates mandatory right turns during specified times. Follow posted instructions to avoid violations.",
+    "answers": [
+      {
+        "answerText": "Traffic must turn right (during designated times).",
+        "correct": true
+      },
+      {
+        "answerText": "All trucks must turn right.",
+        "correct": false
+      },
+      {
+        "answerText": "All buses must turn right.",
+        "correct": false
+      },
+      {
+        "answerText": "Must turn right on Saturday.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Traffic must turn right (during designated times).",
+    "id": 240
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_241.svg",
+    "ai_advice": "This sign prohibits turns. Proceed straight and find an alternate route if necessary.",
+    "answers": [
+      {
+        "answerText": "One-way traffic.",
+        "correct": false
+      },
+      {
+        "answerText": "Two-way traffic.",
+        "correct": false
+      },
+      {
+        "answerText": "Turns allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "No turns allowed.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "No turns allowed.",
+    "id": 241
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_242.svg",
+    "ai_advice": "This sign indicates the road ends ahead. Prepare to exit right or left as directed.",
+    "answers": [
+      {
+        "answerText": "Municipal road ends.",
+        "correct": false
+      },
+      {
+        "answerText": "Road ends, exit right or left.",
+        "correct": true
+      },
+      {
+        "answerText": "Roads meet.",
+        "correct": false
+      },
+      {
+        "answerText": "Overpass ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Road ends, exit right or left.",
+    "id": 242
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_243.svg",
+    "ai_advice": "This sign warns of a school crosswalk ahead. Reduce speed and watch for children.",
+    "answers": [
+      {
+        "answerText": "Pedestrian crosswalk ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Children at play.",
+        "correct": false
+      },
+      {
+        "answerText": "Playground area ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "School crosswalk ahead.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "School crosswalk ahead.",
+    "id": 243
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_244.svg",
+    "ai_advice": "This sign prohibits left turns. Follow posted instructions to avoid violations.",
+    "answers": [
+      {
+        "answerText": "No left turn.",
+        "correct": true
+      },
+      {
+        "answerText": "Buses may turn left.",
+        "correct": false
+      },
+      {
+        "answerText": "Do not enter.",
+        "correct": false
+      },
+      {
+        "answerText": "Slow down for the turn.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "No left turn.",
+    "id": 244
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_245.svg",
+    "ai_advice": "This sign indicates drivers must keep right of the sign. Follow directional instructions for safety.",
+    "answers": [
+      {
+        "answerText": "Slow traffic keep right.",
+        "correct": false
+      },
+      {
+        "answerText": "Entering a municipality.",
+        "correct": false
+      },
+      {
+        "answerText": "Prepare to change lanes.",
+        "correct": false
+      },
+      {
+        "answerText": "Keep right of this sign.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Keep right of this sign.",
+    "id": 245
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_246.svg",
+    "ai_advice": "This sign indicates a mandatory left turn lane. Follow directional instructions to avoid violations.",
+    "answers": [
+      {
+        "answerText": "Exit ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Left turning lane ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Two-way traffic ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "This lane must turn left.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "This lane must turn left.",
+    "id": 246
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_247.svg",
+    "ai_advice": "This sign indicates a hazard marker showing an obstruction. Proceed with caution.",
+    "answers": [
+      {
+        "answerText": "Low overhead clearance.",
+        "correct": false
+      },
+      {
+        "answerText": "Hidden intersection ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Yield ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Hazard marker showing an obstruction.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Hazard marker showing an obstruction.",
+    "id": 247
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_248.svg",
+    "ai_advice": "This sign indicates all traffic must turn left. Follow directional instructions to avoid violations.",
+    "answers": [
+      {
+        "answerText": "All traffic must slow down.",
+        "correct": false
+      },
+      {
+        "answerText": "Exit lane.",
+        "correct": false
+      },
+      {
+        "answerText": "All traffic must turn left.",
+        "correct": true
+      },
+      {
+        "answerText": "Buses may turn left.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "All traffic must turn left.",
+    "id": 248
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_249.svg",
+    "ai_advice": "This sign prohibits stopping to wait. Follow posted instructions to avoid violations.",
+    "answers": [
+      {
+        "answerText": "No parking.",
+        "correct": false
+      },
+      {
+        "answerText": "Do not stop to wait.",
+        "correct": true
+      },
+      {
+        "answerText": "Parking allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "No stopping during rush hour.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Do not stop to wait.",
+    "id": 249
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_250.svg",
+    "ai_advice": "This sign indicates through traffic is not permitted. Follow posted instructions to avoid violations.",
+    "answers": [
+      {
+        "answerText": "Right turn only.",
+        "correct": false
+      },
+      {
+        "answerText": "No right turn allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "Through traffic not permitted.",
+        "correct": true
+      },
+      {
+        "answerText": "Left turning lane.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Through traffic not permitted.",
+    "id": 250
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_251.svg",
+    "ai_advice": "This sign warns of a railway crossing ahead. Reduce speed and prepare to stop if necessary.",
+    "answers": [
+      {
+        "answerText": "Railway crossing.",
+        "correct": true
+      },
+      {
+        "answerText": "Crossing ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Guarded crossing ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Cross roads ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Railway crossing.",
+    "id": 251
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_252.svg",
+    "ai_advice": "This sign indicates school crosswalk ahead. Children are present, so reduced speed to 30km/h is required.",
+    "answers": [
+      {
+        "answerText": "Pedestrian crosswalk.",
+        "correct": false
+      },
+      {
+        "answerText": "School crosswalk.",
+        "correct": true
+      },
+      {
+        "answerText": "Pedestrian corridor.",
+        "correct": false
+      },
+      {
+        "answerText": "Playground crosswalk.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "School crosswalk.",
+    "id": 252
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_253.svg",
+    "ai_advice": "This sign marks beginning of passing lane. Passing is allowed only when safe and permitted by pavement markings.",
+    "answers": [
+      {
+        "answerText": "Two lane traffic.",
+        "correct": false
+      },
+      {
+        "answerText": "Passing permitted.",
+        "correct": true
+      },
+      {
+        "answerText": "Three lane street ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Right lane ends.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Passing permitted.",
+    "id": 253
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_254.svg",
+    "ai_advice": "This sign requires full stop before crosswalk. Stopping position is mandated at marked stop line or before entering intersection.",
+    "answers": [
+      {
+        "answerText": "Stop.",
+        "correct": true
+      },
+      {
+        "answerText": "Stop when requested.",
+        "correct": false
+      },
+      {
+        "answerText": "Yield.",
+        "correct": false
+      },
+      {
+        "answerText": "Proceed if safe.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Stop.",
+    "id": 254
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_255.svg",
+    "ai_advice": "This sign warns of traffic island ahead. It is prohibited to drive over traffic islands except where authorized.",
+    "answers": [
+      {
+        "answerText": "Lane ends ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Two-way traffic ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "One-way traffic ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Traffic island ahead.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Traffic island ahead.",
+    "id": 255
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_256.svg",
+    "ai_advice": "This sign indicates one-way traffic. It is prohibited to drive in the opposite direction. Applies 24/7 unless supplementary plate indicates otherwise.",
+    "answers": [
+      {
+        "answerText": "One Way: Proceed in direction of arrow only.",
+        "correct": true
+      },
+      {
+        "answerText": "No turns allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "Right turn lane ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "No backing allowed.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "One Way: Proceed in direction of arrow only.",
+    "id": 256
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_257.svg",
+    "answers": [
+      {
+        "answerText": "No right turn on Saturday.",
+        "correct": false
+      },
+      {
+        "answerText": "Right turn allowed at anytime.",
+        "correct": false
+      },
+      {
+        "answerText": "No stop required for right turn.",
+        "correct": false
+      },
+      {
+        "answerText": "No right turn during the times shown.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "No right turn during the times shown.",
+    "id": 257,
+    "ai_advice": "This sign indicates that right turns are prohibited during the specific times displayed on the sign. Always check the times shown to ensure compliance with traffic regulations."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_258.svg",
+    "answers": [
+      {
+        "answerText": "Median ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Entering a town, city, or village.",
+        "correct": false
+      },
+      {
+        "answerText": "Divided highway begins ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Road ends ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Divided highway begins ahead.",
+    "id": 258,
+    "ai_advice": "This sign warns drivers that a divided highway is starting ahead. Be prepared for a physical barrier or median separating opposing lanes of traffic."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_259.svg",
+    "answers": [
+      {
+        "answerText": "Sharp right curve, trucks maximum speed 40 km/h.",
+        "correct": false
+      },
+      {
+        "answerText": "Curve in road.",
+        "correct": false
+      },
+      {
+        "answerText": "Sharp turn.",
+        "correct": false
+      },
+      {
+        "answerText": "Sharp right curve, maximum recommended speed 40 km/h",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Sharp right curve, maximum recommended speed 40 km/h",
+    "id": 259,
+    "ai_advice": "This sign indicates a sharp right curve ahead with a recommended maximum speed of 40 km/h. Reduce your speed to safely navigate the curve."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_260.svg",
+    "answers": [
+      {
+        "answerText": "Merging traffic.",
+        "correct": false
+      },
+      {
+        "answerText": "Speed up",
+        "correct": false
+      },
+      {
+        "answerText": "Slow down.",
+        "correct": false
+      },
+      {
+        "answerText": "Right lane ends ahead.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Right lane ends ahead.",
+    "id": 260,
+    "ai_advice": "This sign warns that the right lane is ending ahead. Merge left safely and be aware of other vehicles merging into your lane."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_261.svg",
+    "answers": [
+      {
+        "answerText": "Reserved Bus Lane ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Trucks only.",
+        "correct": false
+      },
+      {
+        "answerText": "Buses only 08:30 - 17:30.",
+        "correct": false
+      },
+      {
+        "answerText": "School bus only.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Reserved Bus Lane ahead.",
+    "id": 261,
+    "ai_advice": "This sign indicates that a reserved bus lane is ahead. Only buses are allowed to use this lane during the specified times."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_262.svg",
+    "answers": [
+      {
+        "answerText": "Wet roads.",
+        "correct": false
+      },
+      {
+        "answerText": "Slippery when wet.",
+        "correct": false
+      },
+      {
+        "answerText": "Falling rocks.",
+        "correct": false
+      },
+      {
+        "answerText": "Flying stones.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Flying stones.",
+    "id": 262,
+    "ai_advice": "This sign warns of flying stones, which can be kicked up by vehicles. Maintain a safe distance from the vehicle ahead and be cautious of debris on the road."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_263.svg",
+    "answers": [
+      {
+        "answerText": "Detour ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Road closure.",
+        "correct": false
+      },
+      {
+        "answerText": "No passing.",
+        "correct": false
+      },
+      {
+        "answerText": "Forest fire ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Detour ahead.",
+    "id": 263,
+    "ai_advice": "This sign indicates a detour ahead. Follow the detour signs and be prepared for a change in the usual route."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_264.svg",
+    "answers": [
+      {
+        "answerText": "Road narrows.",
+        "correct": false
+      },
+      {
+        "answerText": "No shoulders.",
+        "correct": false
+      },
+      {
+        "answerText": "Speed zone.",
+        "correct": false
+      },
+      {
+        "answerText": "Narrow bridge ahead.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Narrow bridge ahead.",
+    "id": 264,
+    "ai_advice": "This sign warns of a narrow bridge ahead. Reduce your speed and be cautious when crossing, especially if meeting oncoming traffic."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_265.svg",
+    "answers": [
+      {
+        "answerText": "Road work .",
+        "correct": true
+      },
+      {
+        "answerText": "Playground area.",
+        "correct": false
+      },
+      {
+        "answerText": "Public gardens ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Tree plantation ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Road work .",
+    "id": 265,
+    "ai_advice": "This sign indicates road work ahead. Be prepared for possible lane closures, reduced speed limits, and workers on the road."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_266.svg",
+    "answers": [
+      {
+        "answerText": "Curve in the road.",
+        "correct": false
+      },
+      {
+        "answerText": "Right curve ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Right turn ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "All traffic move right.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Right curve ahead.",
+    "id": 266,
+    "ai_advice": "This sign warns of a right curve ahead. Reduce your speed and prepare to navigate the curve safely."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_267.svg",
+    "answers": [
+      {
+        "answerText": "Construction area.",
+        "correct": true
+      },
+      {
+        "answerText": "Building area.",
+        "correct": false
+      },
+      {
+        "answerText": "Equipment ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Ditch digging equipment ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Construction area.",
+    "id": 267,
+    "ai_advice": "This sign indicates a construction area ahead. Be prepared for possible lane closures, reduced speed limits, and workers on the road."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_268.svg",
+    "answers": [
+      {
+        "answerText": "Maximum speed 90 km/h.",
+        "correct": true
+      },
+      {
+        "answerText": "Maximum speed 90 km/h for trucks only.",
+        "correct": false
+      },
+      {
+        "answerText": "Maximum speed 90 km/h during weekends.",
+        "correct": false
+      },
+      {
+        "answerText": "No passing allowed.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Maximum speed 90 km/h.",
+    "id": 268,
+    "ai_advice": "This sign indicates the maximum speed limit is 90 km/h. Do not exceed this speed to ensure safety and compliance with traffic laws."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_269.svg",
+    "answers": [
+      {
+        "answerText": "Playground corridor.",
+        "correct": false
+      },
+      {
+        "answerText": "Pedestrian corridor.",
+        "correct": true
+      },
+      {
+        "answerText": "School ground corridor.",
+        "correct": false
+      },
+      {
+        "answerText": "School crossing.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Pedestrian corridor.",
+    "id": 269,
+    "ai_advice": "This sign indicates a pedestrian corridor ahead. Be prepared to yield to pedestrians and drive cautiously in this area."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_270.svg",
+    "answers": [
+      {
+        "answerText": "Icy road.",
+        "correct": false
+      },
+      {
+        "answerText": "Bridge ices.",
+        "correct": true
+      },
+      {
+        "answerText": "Slippery when wet.",
+        "correct": false
+      },
+      {
+        "answerText": "Check brakes.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Bridge ices.",
+    "id": 270,
+    "ai_advice": "This sign warns that the bridge may ice over before the road does. Reduce speed and be cautious, especially in cold or wet conditions."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_271.svg",
+    "answers": [
+      {
+        "answerText": "One-way traffic.",
+        "correct": false
+      },
+      {
+        "answerText": "No passing allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "Two-way traffic.",
+        "correct": true
+      },
+      {
+        "answerText": "Passing allowed.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Two-way traffic.",
+    "id": 271,
+    "ai_advice": "This sign indicates that two-way traffic is ahead. Be prepared for vehicles approaching from the opposite direction and stay in your lane."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_272.svg",
+    "answers": [
+      {
+        "answerText": "Stop ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Slow down.",
+        "correct": false
+      },
+      {
+        "answerText": "Yield ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Danger ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Stop ahead.",
+    "id": 272,
+    "ai_advice": "This sign warns that a stop sign is ahead. Prepare to stop completely before proceeding."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_273.svg",
+    "answers": [
+      {
+        "answerText": "School crosswalk.",
+        "correct": false
+      },
+      {
+        "answerText": "Playground crosswalk ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Pedestrian crosswalk.",
+        "correct": true
+      },
+      {
+        "answerText": "Construction ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Pedestrian crosswalk.",
+    "id": 273,
+    "ai_advice": "This sign indicates a pedestrian crosswalk ahead. Be prepared to yield to pedestrians crossing the road."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_274.svg",
+    "answers": [
+      {
+        "answerText": "Divided highway ends.",
+        "correct": true
+      },
+      {
+        "answerText": "Road surface change.",
+        "correct": false
+      },
+      {
+        "answerText": "Leaving a town, city, or village.",
+        "correct": false
+      },
+      {
+        "answerText": "No U-turns allowed.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Divided highway ends.",
+    "id": 274,
+    "ai_advice": "This sign indicates that the divided highway is ending. Be prepared for two-way traffic ahead."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_275.svg",
+    "answers": [
+      {
+        "answerText": "Slippery when wet.",
+        "correct": false
+      },
+      {
+        "answerText": "Bridge ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Broken road surface.",
+        "correct": false
+      },
+      {
+        "answerText": "Bump ahead.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Bump ahead.",
+    "id": 275,
+    "ai_advice": "This sign warns of a bump in the road ahead. Reduce speed to navigate the bump safely."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_276.svg",
+    "answers": [
+      {
+        "answerText": "No parking between 15:30 - 17:30 hrs.",
+        "correct": false
+      },
+      {
+        "answerText": "Emergency stopping only.",
+        "correct": false
+      },
+      {
+        "answerText": "Buses only.",
+        "correct": false
+      },
+      {
+        "answerText": "Parking is prohibited.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Parking is prohibited.",
+    "id": 276,
+    "ai_advice": "This sign indicates that parking is prohibited in the area. Do not park your vehicle here to avoid fines or towing."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_277.svg",
+    "answers": [
+      {
+        "answerText": "Passenger vehicles only.",
+        "correct": false
+      },
+      {
+        "answerText": "No bicyclists.",
+        "correct": false
+      },
+      {
+        "answerText": "Buses and cyclists only (during designated times).",
+        "correct": true
+      },
+      {
+        "answerText": "Trucks not allowed.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Buses and cyclists only (during designated times).",
+    "id": 277,
+    "ai_advice": "This sign indicates that only buses and cyclists are allowed in the lane during designated times. Other vehicles must not use this lane during these times."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_278.svg",
+    "answers": [
+      {
+        "answerText": "Angled railway crossing.",
+        "correct": true
+      },
+      {
+        "answerText": "Hidden intersection.",
+        "correct": false
+      },
+      {
+        "answerText": "Crossroad ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "School bus crossing.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Angled railway crossing.",
+    "id": 278,
+    "ai_advice": "This sign warns of an angled railway crossing ahead. Be prepared to stop if necessary and watch for trains."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_279.svg",
+    "answers": [
+      {
+        "answerText": "Intersection ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Heavy equipment ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Road ends.",
+        "correct": false
+      },
+      {
+        "answerText": "Trucks entering on the right.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Trucks entering on the right.",
+    "id": 279,
+    "ai_advice": "This sign indicates that trucks may be entering the road from the right. Be cautious and yield to merging trucks."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_280.svg",
+    "answers": [
+      {
+        "answerText": "Right turn only.",
+        "correct": false
+      },
+      {
+        "answerText": "Reserved Lane located in curb lane.",
+        "correct": true
+      },
+      {
+        "answerText": "No right turns between 08:00 - 17:30.",
+        "correct": false
+      },
+      {
+        "answerText": "Truck lane only.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Reserved Lane located in curb lane.",
+    "id": 280,
+    "ai_advice": "This sign indicates a reserved lane in the curb lane. Only authorized vehicles, such as buses, may use this lane during specified times."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_281.svg",
+    "answers": [
+      {
+        "answerText": "Do not pass to intersection.",
+        "correct": false
+      },
+      {
+        "answerText": "Stop here for red traffic signal.",
+        "correct": true
+      },
+      {
+        "answerText": "For trucks only.",
+        "correct": false
+      },
+      {
+        "answerText": "Stop here during winter months.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Stop here for red traffic signal.",
+    "id": 281,
+    "ai_advice": "This sign indicates where you must stop when the traffic signal is red. Always stop behind the line to avoid blocking the intersection."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_282.svg",
+    "answers": [
+      {
+        "answerText": "Intersection ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Hidden intersection ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Traffic signals ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Busy intersection ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Traffic signals ahead.",
+    "id": 282,
+    "ai_advice": "This sign warns of traffic signals ahead. Be prepared to stop or proceed according to the signal lights."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_283.svg",
+    "answers": [
+      {
+        "answerText": "Wildlife sanctuary.",
+        "correct": false
+      },
+      {
+        "answerText": "Deer crossing area ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Municipal animal pound.",
+        "correct": false
+      },
+      {
+        "answerText": "Provincial park entrance ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Deer crossing area ahead.",
+    "id": 283,
+    "ai_advice": "This sign indicates a deer crossing area ahead. Be cautious and watch for deer, especially during dawn and dusk."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_284.svg",
+    "answers": [
+      {
+        "answerText": "Exit lane.",
+        "correct": false
+      },
+      {
+        "answerText": "Buses must turn right.",
+        "correct": false
+      },
+      {
+        "answerText": "All traffic must turn right.",
+        "correct": true
+      },
+      {
+        "answerText": "No right turn.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "All traffic must turn right.",
+    "id": 284,
+    "ai_advice": "This sign indicates that all traffic must turn right. Do not proceed straight or turn left at this intersection."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_285.svg",
+    "answers": [
+      {
+        "answerText": "Right turn allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "No right turn on red signal.",
+        "correct": true
+      },
+      {
+        "answerText": "Right turn on red.",
+        "correct": false
+      },
+      {
+        "answerText": "No right turn allowed.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "No right turn on red signal.",
+    "id": 285,
+    "ai_advice": "This sign prohibits right turns on a red signal. You must wait for a green light before turning right."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_286.svg",
+    "answers": [
+      {
+        "answerText": "Playground zone.",
+        "correct": false
+      },
+      {
+        "answerText": "Play zone.",
+        "correct": false
+      },
+      {
+        "answerText": "School zone.",
+        "correct": true
+      },
+      {
+        "answerText": "Walk safely.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "School zone.",
+    "id": 286,
+    "ai_advice": "This sign indicates a school zone. Reduce speed and be prepared to stop for children crossing the road."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_287.svg",
+    "answers": [
+      {
+        "answerText": "Enter at your own risk.",
+        "correct": false
+      },
+      {
+        "answerText": "Road ends.",
+        "correct": false
+      },
+      {
+        "answerText": "Road closed.",
+        "correct": false
+      },
+      {
+        "answerText": "Do not enter.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Do not enter.",
+    "id": 287,
+    "ai_advice": "This sign indicates that you must not enter the road or area ahead. It is typically used for one-way streets or restricted areas."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_288.svg",
+    "answers": [
+      {
+        "answerText": "No right turn allowed.",
+        "correct": false
+      },
+      {
+        "answerText": "Do not enter.",
+        "correct": false
+      },
+      {
+        "answerText": "No left turn.",
+        "correct": false
+      },
+      {
+        "answerText": "No U-turn allowed.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "No U-turn allowed.",
+    "id": 288,
+    "ai_advice": "This sign prohibits U-turns. Do not attempt to make a U-turn at this location."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_289.svg",
+    "answers": [
+      {
+        "answerText": "Do not pass.",
+        "correct": true
+      },
+      {
+        "answerText": "One-way traffic ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Two lane roadway.",
+        "correct": false
+      },
+      {
+        "answerText": "Single lane ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Do not pass.",
+    "id": 289,
+    "ai_advice": "This sign indicates that passing is not allowed. Stay in your lane and do not attempt to overtake other vehicles."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_290.svg",
+    "answers": [
+      {
+        "answerText": "Parking permitted as indicated.",
+        "correct": true
+      },
+      {
+        "answerText": "No parking limitation.",
+        "correct": false
+      },
+      {
+        "answerText": "No parking before 9:00 a.m.",
+        "correct": false
+      },
+      {
+        "answerText": "Parking permitted on one-way streets.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Parking permitted as indicated.",
+    "id": 290,
+    "ai_advice": "This sign indicates that parking is permitted as indicated by the times or conditions specified on the sign."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_291.svg",
+    "answers": [
+      {
+        "answerText": "Rough road.",
+        "correct": false
+      },
+      {
+        "answerText": "Slippery when wet.",
+        "correct": false
+      },
+      {
+        "answerText": "Ice covered.",
+        "correct": false
+      },
+      {
+        "answerText": "Bump ahead.",
+        "correct": true
+      }
+    ],
+    "correct_answer": "Bump ahead.",
+    "id": 291,
+    "ai_advice": "This sign warns of a bump in the road ahead. Reduce speed to navigate the bump safely."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_292.svg",
+    "answers": [
+      {
+        "answerText": "Construction zone.",
+        "correct": false
+      },
+      {
+        "answerText": "Part of roadway has been removed.",
+        "correct": true
+      },
+      {
+        "answerText": "Gravel surface.",
+        "correct": false
+      },
+      {
+        "answerText": "Broken road surface.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Part of roadway has been removed.",
+    "id": 292,
+    "ai_advice": "This sign warns that part of the roadway has been removed. Drive cautiously and be prepared for changes in the road surface."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_293.svg",
+    "answers": [
+      {
+        "answerText": "Maximum truck speed 40 km/h when meeting traffic.",
+        "correct": false
+      },
+      {
+        "answerText": "Maximum speed 40 km/h when meeting traffic.",
+        "correct": true
+      },
+      {
+        "answerText": "Maximum passing speed 40 km/h on curve ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Maximum speed 40 km/h when passing.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Maximum speed 40 km/h when meeting traffic.",
+    "id": 293,
+    "ai_advice": "This sign indicates that the maximum speed is 40 km/h when meeting oncoming traffic. Reduce speed to ensure safety."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_294.svg",
+    "answers": [
+      {
+        "answerText": "Entering town limits.",
+        "correct": false
+      },
+      {
+        "answerText": "Two-way traffic ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Turn ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Road ends.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Two-way traffic ahead.",
+    "id": 294,
+    "ai_advice": "This sign warns of two-way traffic ahead. Be prepared for vehicles approaching from the opposite direction."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_295.svg",
+    "answers": [
+      {
+        "answerText": "Road slippery when wet.",
+        "correct": true
+      },
+      {
+        "answerText": "Icy road.",
+        "correct": false
+      },
+      {
+        "answerText": "No spinning of tires.",
+        "correct": false
+      },
+      {
+        "answerText": "Trucks must use low gear.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Road slippery when wet.",
+    "id": 295,
+    "ai_advice": "This sign warns that the road may become slippery when wet. Reduce speed and drive cautiously in wet conditions."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_296.svg",
+    "answers": [
+      {
+        "answerText": "Traffic must turn right.",
+        "correct": false
+      },
+      {
+        "answerText": "Very sharp right turn.",
+        "correct": true
+      },
+      {
+        "answerText": "Traffic move right.",
+        "correct": false
+      },
+      {
+        "answerText": "Curve in the road.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Very sharp right turn.",
+    "id": 296,
+    "ai_advice": "This sign warns of a very sharp right turn ahead. Reduce speed and prepare to navigate the turn carefully."
+  },
+  {
+    "question_text": "This sign means:",
+    "imgUrl": "/DriverQuiz/images/class5/image_297.svg",
+    "answers": [
+      {
+        "answerText": "Crossroad ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Hidden intersection ahead.",
+        "correct": true
+      },
+      {
+        "answerText": "Gravel road ahead.",
+        "correct": false
+      },
+      {
+        "answerText": "Right or left turn ahead.",
+        "correct": false
+      }
+    ],
+    "correct_answer": "Hidden intersection ahead.",
+    "id": 297,
+    "ai_advice": "This sign warns of a hidden intersection ahead. Be cautious and watch for vehicles entering or crossing the road."
+  }
+]
